@@ -1,4 +1,5 @@
 
+import ContactForm from "./components/ContactForm";
 
 export default function Home() {
   return (
@@ -19,9 +20,9 @@ export default function Home() {
               <a href="#about" className="text-gray-600 hover:text-blue-600 transition-colors font-medium">About</a>
               <a href="#services" className="text-gray-600 hover:text-blue-600 transition-colors font-medium">Services</a>
               <a href="#contact" className="text-gray-600 hover:text-blue-600 transition-colors font-medium">Contact</a>
-              <button className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-2 rounded-full text-sm font-semibold hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-200">
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeVPdE8FDjGrnmAJ8kAXzXUTrOz780udwG6noNWHbShZuuIgw/viewform" alt=''>Schedule Consultation</a>
-              </button>
+                              <a href="https://docs.google.com/forms/d/e/1FAIpQLSeVPdE8FDjGrnmAJ8kAXzXUTrOz780udwG6noNWHbShZuuIgw/viewform" className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-2 rounded-full text-sm font-semibold hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-200">
+                  Schedule Consultation
+                </a>
               {/* <a href="https://docs.google.com/forms/d/e/1FAIpQLSeVPdE8FDjGrnmAJ8kAXzXUTrOz780udwG6noNWHbShZuuIgw/viewform" className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-2 rounded-full text-sm font-semibold hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-200">Schedule Consultation</a> */}
             </div>
             <div className="md:hidden">
@@ -55,9 +56,9 @@ export default function Home() {
                 Offering individual psychotherapy for adults via telehealth in Michigan and most U.S. states through PSYPACT participation
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                <button className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300">
-                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSeVPdE8FDjGrnmAJ8kAXzXUTrOz780udwG6noNWHbShZuuIgw/viewform">Schedule a Consultation</a>
-                </button>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeVPdE8FDjGrnmAJ8kAXzXUTrOz780udwG6noNWHbShZuuIgw/viewform" className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300">
+                  Schedule a Consultation
+                </a>
                 <button className="border-2 border-blue-600 text-blue-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-600 hover:text-white transition-all duration-300">
                   Learn More
                 </button>
@@ -257,53 +258,7 @@ export default function Home() {
           </div>
           
           <div className="grid lg:grid-cols-2 gap-12">
-            <div className="bg-white rounded-2xl shadow-xl p-8 border border-indigo-100">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">Get in Touch</h3>
-              <form className="space-y-6">
-                <div>
-                  <label htmlFor="name" className="block text-sm font-semibold text-gray-700 mb-2">
-                    Name
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all duration-200"
-                    placeholder="Your name"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="email" className="block text-sm font-semibold text-gray-700 mb-2">
-                    Email
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all duration-200"
-                    placeholder="your.email@example.com"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="message" className="block text-sm font-semibold text-gray-700 mb-2">
-                    Message
-                  </label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    rows={4}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all duration-200"
-                    placeholder="Tell me about what brings you to therapy..."
-                  ></textarea>
-                </div>
-                <button
-                  type="submit"
-                  className="w-full bg-gradient-to-r from-indigo-600 to-blue-600 text-white py-3 px-6 rounded-lg font-semibold hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-200"
-                >
-                  Send Message
-                </button>
-              </form>
-            </div>
+            <ContactForm />
             <div className="bg-white rounded-2xl shadow-xl p-8 border border-indigo-100">
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Contact Information</h3>
               <div className="space-y-6">
